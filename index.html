@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/Avatar.jpg" type="image/x-icon" />
+    <title>Porfolio</title>
+  </head>
+  <body>
+    <!--Inicio nav-->
+    <header class="sticky-md-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+        <div class="container">
+          <a class="navbar-brand fw-bold text-uppercase" href="#"
+            >Agustina Pfund</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse fw-bold justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav d-flex">
+              <li class="nav-item">
+                <a class="nav-link" href="#porfolio">Porfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-mi">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Fin nav-->
+    <main>
+      <!--inicio presentacion-->
+      <section class="bg-main">
+        <div class="container">
+          <div class="col-12 d-flex flex-column align-items-center py-2">
+            <div class="row">
+              <img
+                class="img-fluid d-block mx-auto rounded-circle w-25"
+                src="./img/Avatar.jpg"
+                alt="Foto perfil"
+                srcset=""
+              />
+            </div>
+            <div class="row h1 text-center text-uppercase">Agustina Pfund</div>
+            <div class="row text-center d-flex align-items-center">
+              <i class="bi bi-dash-lg col-4 fs-2"></i>
+              <i class="bi bi-star-fill col-4"></i>
+              <i class="bi bi-dash-lg col-4 fs-2"></i>
+            </div>
+            <div class="row h4 text-center">
+              Maquetadora Web - Entusiasta - Autodidacta
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Fin presentacion-->
+      <section id="portfolio" class="container">
+        <div class="col-12 d-flex flex-column align-items-center">
+          <h1 class="fs-1 fw-bold text-center text-uppercase">Portfolio</h1>
+          <div class="row text-center d-flex align-items-center">
+            <i class="bi bi-dash-lg col-4 fs-2"></i>
+            <i class="bi bi-star-fill col-4"></i>
+            <i class="bi bi-dash-lg col-4 fs-2"></i>
+          </div>
+        </div>
+        <article class="container">
+          <section class="row mb-3">
+            <!--Tarjeta 1-->
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-bs-toggle="modal"
+              data-bs-target="#lemonpie"
+            >
+              <div class="card">
+                <img
+                  src="./img/lemon-pie.jpeg"
+                  class="card-img-top"
+                  alt="Imagen lemon pie"
+                />
+                <div class="card-body">
+                  <h3 class="card-text">Lemon pie</h3>
+                </div>
+              </div>
+            </article>
+            <!--Fin tarjeta 1-->
+            <!-- Modal tarjeta 1-->
+            <div
+              class="modal fade"
+              id="lemonpie"
+              tabindex="-1"
+              aria-labelledby="lemonpie"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="lemonpie">Lemon Pie</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Este sitio web lo realizamos en la mesa de trabajo n°4, que
+                    consistió en crear una página sobre la receta de un lemon
+                    pie a partir de un diseño de referencia en Figma. El
+                    objetivo fue reconocer las diferentes etiquetas que
+                    conforman la estructura del maquetado y trasladarlas al
+                    código HTML, aplicando estilos CSS para obtener un resultado
+                    visual similar al modelo.
+                  </div>
+                  <div class="modal-footer">
+                    <a
+                      href="https://agustinapfund.github.io/Lemonpie-clase4/"
+                      class="btn"
+                    >
+                      Ir al proyecto
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fin modal tarjeta 1-->
+            <!--Tarjeta 2-->
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-bs-toggle="modal"
+              data-bs-target="#cvbatman"
+            >
+              <div class="card">
+                <img
+                  src="./img/CVBatman.png"
+                  class="card-img-top"
+                  alt="Imagen Batman"
+                />
+                <div class="card-body">
+                  <h3 class="card-text">CV Batman</h3>
+                </div>
+              </div>
+            </article>
+            <!--Fin tarjeta 2-->
+            <!-- Modal tarjeta 2-->
+            <div
+              class="modal fade"
+              id="cvbatman"
+              tabindex="-1"
+              aria-labelledby="cvbatman"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="cvbatman">CV Batman</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Este sitio web lo realizamos en la mesa de trabajo n°22 y
+                    consistió en refactorizar una página de currículum vitae
+                    utilizando el preprocesador Sass. A partir del trabajo
+                    “CV-Batman” realizado en clases anteriores, se reescribieron
+                    los estilos aplicando variables, funciones y anidamiento
+                    para optimizar la estructura del código y mejorar su
+                    mantenimiento. El objetivo de la actividad fue incorporar el
+                    uso de Sass como herramienta que permite generar hojas de
+                    estilo más organizadas, reutilizables y fáciles de
+                    actualizar, manteniendo el mismo resultado visual que el
+                    diseño original.
+                  </div>
+                  <div class="modal-footer">
+                    <a
+                      href="https://agustinapfund.github.io/CV-BatmanSass/"
+                      class="btn"
+                    >
+                      Ir al proyecto
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fin modal tarjeta 2-->
+            <!--Tarjeta 3-->
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-bs-toggle="modal"
+              data-bs-target="#superheroe"
+            >
+              <div class="card">
+                <img
+                  src="./img/super.png"
+                  class="card-img-top"
+                  alt="Imagen superheroe"
+                />
+                <div class="card-body">
+                  <h3 class="card-text">Súpers</h3>
+                </div>
+              </div>
+            </article>
+            <!--Fin tarjeta 3-->
+            <!-- Modal tarjeta 3-->
+            <div
+              class="modal fade"
+              id="superheroe"
+              tabindex="-1"
+              aria-labelledby="superheroe"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="superheroe">Súpers</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Este sitio web lo realizamos en la mesa de trabajo n°18 y
+                    consistió en mejorar el desarrollo una página de superhéroes
+                    que realizamos previamente, aplicando pseudoclases y
+                    pseudoelementos en CSS para añadir interactividad. A partir
+                    del diseño de referencia en Figma, se maquetó la estructura
+                    en HTML y se incorporaron efectos visuales dinámicos, como
+                    cambios de color, resaltado y elementos decorativos
+                    generados desde el CSS.
+                  </div>
+                  <div class="modal-footer">
+                    <a
+                      href="https://agustinapfund.github.io/Clase9-CSSBasico/"
+                      class="btn"
+                    >
+                      Ir al proyecto
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fin modal tarjeta 3-->
+          </section>
+          <!--Fin seccion fila 1-->
+          <!--Inicio seccion fila 2-->
+          <section class="row">
+            <!--Tarjeta 4-->
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-bs-toggle="modal"
+              data-bs-target="#petshop"
+            >
+              <div class="card">
+                <img
+                  src="./img/petshop.jpeg"
+                  class="card-img-top"
+                  alt="Imagen gatos"
+                />
+                <div class="card-body">
+                  <h3 class="card-text">Pet Shop</h3>
+                </div>
+              </div>
+            </article>
+            <!--Fin tarjeta 4-->
+            <!-- Modal tarjeta 4-->
+            <div
+              class="modal fade"
+              id="petshop"
+              tabindex="-1"
+              aria-labelledby="petshop"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="petshop">Pet Shop</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Este sitio web lo realizamos en la mesa de trabajo n°17 y
+                    consistió en continuar el desarrollo del proyecto “PetShop”,
+                    incorporando formularios y pseudoselectores en CSS para
+                    mejorar la interactividad. A partir del diseño de referencia
+                    en Figma, se añadieron campos de entrada, etiquetas y
+                    validaciones visuales mediante pseudoclases y
+                    pseudoelementos.
+                  </div>
+                  <div class="modal-footer">
+                    <a
+                      href="https://agustinapfund.github.io/Clase3/"
+                      class="btn"
+                    >
+                      Ir al proyecto
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fin modal tarjeta 4-->
+            <!--Tarjeta 5-->
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-bs-toggle="modal"
+              data-bs-target="#pizza"
+            >
+              <div class="card">
+                <img
+                  src="./img/piza.jpeg"
+                  class="card-img-top"
+                  alt="Imagen pizza"
+                />
+                <div class="card-body">
+                  <h3 class="card-text">Pizza</h3>
+                </div>
+              </div>
+            </article>
+            <!--Fin tarjeta 5-->
+            <!-- Modal tarjeta 5-->
+            <div
+              class="modal fade"
+              id="pizza"
+              tabindex="-1"
+              aria-labelledby="pizza"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="pizza">Pizza</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Este sitio web lo realizamos en la mesa de trabajo n°11 y
+                    consistió en maquetar una página para una pizzería
+                    utilizando Flexbox. A partir del diseño de referencia en
+                    Figma, se estructuró el sitio con etiquetas HTML semánticas
+                    y se aplicaron estilos CSS para lograr un resultado visual
+                    similar al modelo.
+                  </div>
+                  <div class="modal-footer">
+                    <a
+                      href="https://agustinapfund.github.io/Clase11-Flexbox/"
+                      class="btn"
+                    >
+                      Ir al proyecto
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fin modal tarjeta 5-->
+            <!--Tarjeta 6-->
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-bs-toggle="modal"
+              data-bs-target="#gamer"
+            >
+              <div class="card">
+                <img
+                  src="./img/gameshop.jpeg"
+                  class="card-img-top"
+                  alt="Imagen gamer"
+                />
+                <div class="card-body">
+                  <h3 class="card-text">Game Shop</h3>
+                </div>
+              </div>
+            </article>
+            <!--Fin tarjeta 6-->
+            <!-- Modal tarjeta 6-->
+            <div
+              class="modal fade"
+              id="gamer"
+              tabindex="-1"
+              aria-labelledby="gamer"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="gamer">Game Shop</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Proyecto de repaso para el parcial: sitio GameShop
+                    desarrollado con HTML y CSS, aplicando Flexbox, media
+                    queries y buenas prácticas de maquetado y accesibilidad.
+                  </div>
+                  <div class="modal-footer">
+                    <a href="" class="btn"> Ir al proyecto </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fin modal tarjeta 6-->
+          </section>
+        </article>
+        <!--Fin fila 2-->
+      </section>
+      <!--Fin Porfolio-->
+      <!--Inicio sobre mi-->
+      <section class="bg-main">
+        <section id="sobre-mi" class="container py-5">
+          <div class="col-12 d-flex flex-column align-items-center">
+            <div class="row">
+              <h1 class="text-center h1 fw-bold text-uppercase">Sobre Mi</h1>
+            </div>
+            <div class="row text-center d-flex align-items-center">
+              <i class="bi bi-dash-lg col-4 fs-2"></i>
+              <i class="bi bi-star-fill col-4"></i>
+              <i class="bi bi-dash-lg col-4 fs-2"></i>
+            </div>
+            <div
+              class="row d-flex flex-column flex-md-row justify-content-center align-content-center"
+            >
+              <div class="col-12 col-md-4">
+                <p>
+                  Soy Agustina Pfund, estudiante de la Tecnicatura en
+                  Informática de Gestión en la Facultad de Ciencias Exactas y
+                  Naturales de la UNLPam. Me caracterizo por ser responsable,
+                  organizada y comprometida con mi formación.
+                </p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>
+                  Me interesa seguir desarrollando mis habilidades en el área
+                  tecnológica y aplicar mis conocimientos en proyectos que
+                  generen impacto y valor.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <a
+                class="btn"
+                href="https://drive.google.com/file/d/1itW2mM_PNdq3zHJ5ZKQu7zJHX_kuC3wq/view?usp=sharing"
+                >Descargar CV</a
+              >
+            </div>
+          </div>
+        </section>
+      </section>
+      <!--Inicio contacto-->
+      <section
+        id="contacto"
+        class="container d-flex flex-column align-items-center"
+      >
+        <div class="col-12 d-flex flex-column align-items-center">
+          <h1 class="row h1 fw-bold text-center text-uppercase">Contactame!</h1>
+          <div class="row text-center d-flex align-items-center">
+            <i class="bi bi-dash-lg col-4 fs-2"></i>
+            <i class="bi bi-star-fill col-4"></i>
+            <i class="bi bi-dash-lg col-4 fs-2"></i>
+          </div>
+        </div>
+        <div class="col-4">
+          <form action="./form/resultado.html" method="post">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control border-top-0 border-start-0 border-end-0 border-1 border-dark rounded-0"
+                id="floatingEmptyPlaintextInput"
+                placeholder="Nombre completo"
+              />
+              <label for="floatingEmptyPlaintextInput">Nombre Completo</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control border-top-0 border-start-0 border-end-0 border-1 border-dark rounded-0"
+                id="floatingPlaintextInput"
+                placeholder="Email"
+              />
+              <label for="floatingPlaintextInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="tel"
+                class="form-control border-top-0 border-start-0 border-end-0 border-1 border-dark rounded-0"
+                id="floatingPlaintextInputTel"
+                placeholder="Telefono"
+              />
+              <label for="floatingPlaintextInputTel">Telefono</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control border-top-0 border-start-0 border-end-0 border-1 border-dark rounded-0"
+                placeholder="Comentario"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea">Comentario</label>
+            </div>
+            <button class="btn bg-main mt-2" type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+      <!--FIn contacto-->
+    </main>
+    <footer>
+      <section class="bg-footer">
+        <div class="container mt-5">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-4">
+              <h3 class="text-center">Mi Lugar</h3>
+              <p class="text-center">Calle Los Molles</p>
+              <p class="text-center">Santa Rosa, La Pampa</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <h3 class="text-center">Sigamos conectados</h3>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="link-body-emphasis"
+                  href="https://www.facebook.com/agustina.pfund.2025/"
+                  ><i class="bi bi-facebook fs-3 me-3"></i
+                ></a>
+                <a
+                  class="link-body-emphasis"
+                  href="https://www.instagram.com/agustina.pfund/"
+                  ><i class="bi bi-instagram fs-3 me-3"></i
+                ></a>
+                <a
+                  class="link-body-emphasis"
+                  href="https://www.linkedin.com/in/agustina-pfund-14a228263/"
+                  ><i class="bi bi-linkedin fs-3 me-3"></i
+                ></a>
+                <a
+                  class="link-body-emphasis"
+                  href="https://github.com/agustinapfund"
+                  ><i class="bi bi-github fs-3"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <h3 class="text-center">Sobre mi</h3>
+              <p class="text-center">
+                Soy estudiante de la Tecnicatura en Informática de Gestión en la
+                FCEyN-UNLPam, comprometida con seguir creciendo profesionalmente
+                en el área tecnológica.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-footer2">
+        <div class="text-center text-white py-1">
+          <p>Copyright © Mi sitio 2021</p>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
