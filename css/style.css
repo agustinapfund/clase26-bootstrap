@@ -16,3 +16,48 @@ body {
 .letter-white {
   color: white;
 }
+.card {
+  margin-top: 10px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(247, 201, 115, 0.556);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.card::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
